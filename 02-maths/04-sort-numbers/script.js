@@ -6,9 +6,10 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-    const x= new Array (2, 4, 14, 10, 90, 23, 16);
-    x.sort ((a,b) =>a-b);
-    alert(x);
-
+    let x = document.getElementById("numbers").value;
+    let arr = [x];
+    arr = x.split(",");
+    let arr_sort = arr.sort ((a,b)=>a-b);
+    alert (arr_sort);
     });
 })();

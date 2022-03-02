@@ -16,7 +16,10 @@
         "grap",
         "cherry",
     ];
+    
+    document.getElementById("run").addEventListener("click", () => {
 
-    // your code here
-
+        array = ["apple","pear","raspberry","tomatos","kiwi","banana","orange","mandarin","durian","peache","grap","cherry",]
+        console.log(array[3]);
+    });
 })();

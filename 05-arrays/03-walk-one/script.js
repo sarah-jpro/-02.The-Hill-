@@ -18,6 +18,25 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        array =[
+            "apple",
+            "pear",
+            "raspberry",
+            "tomatos",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peache",
+            "grap",
+            "cherry",
+        ]
+        for (index = 0; index < array.length; index++) {
+            console.log(array[index]);
+        }
+    });
 
 })();

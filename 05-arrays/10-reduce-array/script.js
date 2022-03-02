@@ -81,6 +81,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let age = people.map(el => el.age);
+        let age_people = age.reduce(
+            (age_precedent, age_item) => age_precedent + age_item);
+        console.log(age_people);
+    })
 
 })();

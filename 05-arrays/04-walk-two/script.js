@@ -18,6 +18,20 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        index = 0;
+        array = [ "pomme","poire","fraise","tomate","kiwi","banane","orange","mandarine","durian",
+        "pêche",
+        "raisin",
+        "cerise",];
+ 
+        array.forEach(myFunction);
+        function myFunction(item, index)
+        {
+        console.log(item);
+
+        }
+    });
 
 })();

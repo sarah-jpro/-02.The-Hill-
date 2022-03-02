@@ -4,8 +4,14 @@
 
 (() => {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var hrs = new Date().getHours();
+    var minute = new Date().getMinutes();
 
-    // your code here
+
+    if (hrs <=17 && minute <=30)
+    document.getElementById("target").innerHTML = "Good-Morning";
+    
+        else 
+        document.getElementById("target").innerHTML = "Good-Evening";
 
 })();

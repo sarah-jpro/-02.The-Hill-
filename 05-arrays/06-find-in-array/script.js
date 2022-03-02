@@ -80,6 +80,15 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        let user_info=people.filter(items=>items.lastname=="Dupont");
+        user_info.forEach(el => {
+            console.log(el.email);
+        
+        });
+    });
+        people.indexOf(this.lastname=="Dupont");
+
 
 })();
