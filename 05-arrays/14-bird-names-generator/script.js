@@ -30,5 +30,10 @@
         "arboré",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        
+        let items = [birds,adjectives];
+        let item = document.getElementById("target").innerHTML = items[Math.floor(Math.random() * items.length)];
+        
+    })
 })();

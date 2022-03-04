@@ -17,18 +17,7 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        let fruits = [
-            "pomme",
-            "poire",
-            "fraise",
-            "tomate",
-            "orange",
-            "mandarine",
-            "durian",
-            "pêche",
-            "raisin",
-            "cerise",
-        ];
+    
         console.log("Before pop");
         console.log(fruits);
         var popped_fruit = fruits.pop();

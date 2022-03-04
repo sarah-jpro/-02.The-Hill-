@@ -4,5 +4,21 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function (){
+        const entries = new Map([
+            ["name", "Skitty"],
+            ["species", "cat"],
+            ["age", 9],
+            ["gender", "female"],
+            ["color","tabby"]
+        ]);
+
+        const obj = Object.fromEntries(entries);
+
+        console.log(obj);
+       
+
+
+    })
 })();

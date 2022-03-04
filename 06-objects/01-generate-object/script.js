@@ -2,5 +2,16 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        
+        let maPresentation ={
+            lastname: "JS",
+            firstname: 'Sarah',
+            age: 99,
+            city: "Lodelinsart",
+            country: "Belgium"
+          };
+          console.log(maPresentation); 
+    })
+    
 })();
