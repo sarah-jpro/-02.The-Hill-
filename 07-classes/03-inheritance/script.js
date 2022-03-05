@@ -6,37 +6,32 @@
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
+    } 
+    class Cat extends Animal {
+        static greeting="HELLO";
+        constructor(name) {
+            super();
+            this.name = name
+        }
+
     }
+    class Dog extends Animal {
+        static greeting="HELLO";
+        constructor(name) {
+            super();
+            this.name = name
+        }
+    }
+
     document.getElementById("run").addEventListener("click", function (){
 
-        class Animal {
-            constructor( name, greeting) {
-              this.name = name;
-              this.greeting = this.greeting;
-            }
-        }
-        let animal = new Animal("My animal");
-
-        class Cat extends Animal {
-            sayHello() {
-                return `${this.constructor.greeting}! I'm ${this.name}!`;
-            }
-          }
         let Cat = new Cat("Miauz")
-
-        class Dog extends Animal {
-            sayHello() {
-                return `${this.constructor.greeting}! I'm ${this.name}!`;
-            }
-          }
-        let Dog = new Dog("Zelda")
-
         console.log (
             new Cat ("Hello"+ `${this.constructor.greeting}! I'm ${this.name}!`))
-
+        
+        let Dog = new Dog("Zelda")
         console.log (
             new Dog ("Hello"+ `${this.constructor.greeting}! I'm ${this.name}!`))
-           
 
     })    
 })();

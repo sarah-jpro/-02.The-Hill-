@@ -2,7 +2,5 @@
 
 
 (() => {
-
-    // your code here
-
+    target.innerHTML = "Owned";
 })();

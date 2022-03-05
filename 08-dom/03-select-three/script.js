@@ -2,7 +2,17 @@
 
 
 (() => {
+    
+    function modifierTexte ()
+    {
+        let own = document.getElementsByClassName("target");
+        for (let index = 0; index < own.length; index++) {
+            own[index].innerHTML="Owner";
 
-    // your code here
-
+            
+        }
+    
+    }
+    modifierTexte()
+    
 })();
